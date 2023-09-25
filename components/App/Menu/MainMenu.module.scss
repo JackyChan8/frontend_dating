@@ -1,0 +1,85 @@
+.main_menu {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background: #000530;
+    grid-template-rows: 72px 1fr;
+    .apps {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .btn_1 {
+            background: #00FF85;
+        }
+        .btn_2 {
+            background: #FF5454;
+        }
+        .btn_3 {
+            background: #40FFD1;
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .main_menu {
+        .apps {
+            display: grid;
+            grid-gap: 20px;
+            align-items: center;
+            justify-items: center;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "app1 app2" "app3 app3";
+            .app {
+                &:first-child {
+                    grid-area: app1;
+                    align-self: end;
+                    justify-self: end;
+                }
+                &:nth-child(2) {
+                    grid-area: app2;
+                    align-self: end;
+                    justify-self: start;
+                }
+                &:nth-child(3) {
+                    grid-area: app3;
+                    align-self: start;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:540px) {
+    .main_menu {
+        .apps {
+            display: grid;
+            grid-gap: 0px;
+            align-items: center;
+            justify-items: center;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            grid-template-areas: "app1" "app2" "app3";
+            .app {
+                &:first-child {
+                    grid-area: app1;
+                    align-self: start;
+                    justify-self: center;
+                }
+                &:nth-child(2) {
+                    grid-area: app2;
+                    align-self: start;
+                    justify-self: center;
+                }
+                &:nth-child(3) {
+                    grid-area: app3;
+                    align-self: start;
+                    justify-self: center;
+                }
+            }
+        }
+    }
+}

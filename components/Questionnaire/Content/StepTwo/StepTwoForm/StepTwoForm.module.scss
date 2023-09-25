@@ -1,0 +1,106 @@
+.personal_information {
+    display: flex;
+    align-items: start;
+    gap: 250px;
+    
+    h2 {
+        color: #F959E9;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Inter', sans-serif;
+        font-size: 25px;
+    }
+
+    label {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 8px;
+        font-family: 'Inter', sans-serif;
+        span {
+            color: #00FF85;
+            font-weight: bold;
+        }
+        .invalid_field {
+            color: red;
+        }
+    }
+
+    textarea {
+        width: 540px;
+        height: 100%;
+        margin-top: 8px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar { 
+            display: none;
+        }
+    }
+
+    .appearance__title {
+        margin: 50px 0 15px 0;
+    }
+
+    .appearance {
+        .appearance__height, .appearance__weight, .appearance__body_type, .appearance__eye_color {
+            margin-bottom: 16px;
+            width: 540px;
+            display: flex;
+            flex-direction: column;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .form_button {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            margin: 30px auto 0px;
+            flex-direction: column;
+            justify-content: center;
+            button {
+                margin-bottom: 10px;
+                background: #F959E9;
+                width: 328px;
+                height: 36px;
+                color: #FFF;
+                text-align: center;
+                border-radius: 16px;
+                font-family: 'Inter', sans-serif;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+        
+                &:last-child {
+                    background: #43eb4b;
+                    margin-bottom: 0px;
+                }
+                &:hover {
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .about_me {
+        .about_me__short_info, .about_me__interests, .about_me__character,
+        .about_me__family_status, .about_me__orientation {
+            display: flex;
+            width: 540px;
+            height: 100%;
+            margin-bottom: 16px;
+            flex-direction: column;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .about_me__short_info {
+            height: 134px;
+            min-height: 134px;
+            max-height: 200px;
+        }
+    }
+}

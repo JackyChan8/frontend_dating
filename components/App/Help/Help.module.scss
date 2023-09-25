@@ -1,0 +1,172 @@
+.help_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .help_block {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 168px;
+        .help__description {
+            .title {
+                h1 {
+                    width: 383px;
+                    color: #FFF;
+                    font-size: 45px;
+                    font-weight: 800;
+                    font-style: normal;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+            .description {
+                margin-top: 23px;
+                h2 {
+                    color: #FFF;
+                    font-size: 18px;
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+            .image {
+                margin-top: 9px;
+                text-align: right;
+                img {
+                    width: 329px;
+                    height: 344px;
+                }
+            }
+        }
+    }
+}
+
+// Adaptive
+@media (max-width:1130px) {
+    .help_container {
+        .help_block {
+            gap: 40px;
+            .help__description {
+                .title {
+                    h1 {
+
+                    }
+                }
+                .description {
+                    h2 {
+
+                    }
+                }
+                .image {
+                    img {
+                        width: 310px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .help_container {
+        .help_block {
+            gap: 0px;
+            display: flex;
+            flex-direction: column;
+            .help__description {
+                .title {
+                    h1 {
+                        font-size: 35px;
+                        text-align: center;
+                    }
+                }
+                .description {
+                    margin-top: 10px;
+                    h2 {
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                }
+                .image {
+                    img {
+                        width: 100%;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:415px) {
+    .help_container {
+        .help_block {
+            .help__description {
+                .title {
+                    h1 {
+                        width: 100%;
+                        font-size: 29px;
+                    }
+                }
+                .description {
+                    h2 {
+                        width: 100%;
+                    }
+                }
+                .image {
+                    img {
+                        height: 130px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:389px) {
+    .help_container {
+        .help_block {
+            .help__description {
+                .title {
+                    h1 {
+                        font-size: 20px;
+                    }
+                }
+                .description {
+                    margin-top: 5px;
+                    h2 {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:319px) {
+    .help_container {
+        .help_block {
+            .help__description {
+                .title {
+                    h1 {
+                        font-size: 18px;
+                    }
+                }
+                .description {
+                    h2 {
+                        font-size: 10px;
+                    }
+                }
+                .image {
+                    margin-top: 5px;
+                    img {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}

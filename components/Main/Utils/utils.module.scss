@@ -1,0 +1,18 @@
+.btn_connect {
+    margin-top: 12px;
+    width: 235px;
+    height: 54px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 8px;
+    text-transform: uppercase;
+    background-color: #FF54E9;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    &:hover {
+        color: #FF54E9;
+        background: #fff;
+    }
+}

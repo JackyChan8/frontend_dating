@@ -1,0 +1,77 @@
+.form_block {
+  margin-top: 24px;
+  text-align: center;
+  input {
+    width: 328px;
+    height: 44px;
+    color: #000;
+    font-size: 15px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-family: 'Inter', sans-serif;
+  }
+  button {
+    background: #f959e9;
+    margin-top: 16px;
+    width: 328px;
+    height: 36px;
+    color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:hover {
+      background: #fff;
+      color: #000;
+    }
+  }
+  .cancel {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 360px) {
+  .form_block {
+    input,
+    button {
+      width: 290px;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .form_block {
+    input,
+    button {
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 270px) {
+  .form_block {
+    input,
+    button {
+      width: 220px;
+    }
+  }
+}

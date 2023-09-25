@@ -1,0 +1,179 @@
+.sidebar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #000530;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    .sidebar__header {
+        display: flex;
+        justify-content: end;
+        margin: 25px;
+        .cross_btn {
+            background: none;
+            border: none;
+            width: 40px;
+            height: 40px;
+            color: #FF54E9;
+            font-size: 40px;
+            &:hover {
+                color: white;
+                background: none;
+            }
+            &:focus {
+                border: none;
+                box-shadow: none;
+                color: #FF54E9;
+            }
+            span {
+                font-size: 40px;
+            }
+        }
+    }
+    .sidebar__line {
+        width: 100%;
+        min-height: 2px;
+        background-color: #ffffff;
+    }
+    .sidebar__categories {
+        display: flex;
+        flex-direction: column;
+        ul {
+            li {
+                padding: 20px 0;
+                text-align: center;
+                .sidebar__category {
+                    color: #FFF;
+                    font-size: 30px;
+                    font-family: 'Inter', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    padding: 20px 0;
+                    width: 100%;
+                    display: block;
+                    border-bottom: #313131;
+
+                    &:hover {
+                        color: #FF54E9;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar__social_network {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        position: absolute;
+        bottom: 200px;
+        transform: translate(0, -50%);
+
+        img {
+            width: 52px;
+            height: 50px;
+            filter: invert(52%) sepia(16%) saturate(7171%) hue-rotate(284deg) brightness(105%) contrast(105%);
+
+            &:hover {
+                filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(116deg) brightness(99%) contrast(96%);
+            }
+        }
+    }
+    .sidebar__join {
+        text-align: center;
+        button {
+            width: 260px;
+            height: 65px;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            position: absolute;
+            bottom: 40px;
+            transform: translate(-50%, -50%);
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .sidebar {
+        .sidebar__header {
+            margin: 20px;
+            .cross_btn {
+                span {
+                    font-size: 30px;
+                }
+            }
+        }
+        .sidebar__categories {
+            ul {
+                li {
+                    .sidebar__category {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .sidebar__social_network {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .sidebar__join {
+            .btn_connect {
+                width: 230px;
+                height: 60px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:350px) {
+    .sidebar {
+        .sidebar__header {
+            margin: 10px;
+            .cross_btn {
+                span {
+                    font-size: 25px;
+                }
+            }
+        }
+        .sidebar__categories {
+            ul {
+                li {
+                    .sidebar__category {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .sidebar__social_network {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .sidebar__join {
+            .btn_connect {
+                width: 210px;
+                height: 50px;
+                font-size: 18px;
+            }
+        }
+    }
+}

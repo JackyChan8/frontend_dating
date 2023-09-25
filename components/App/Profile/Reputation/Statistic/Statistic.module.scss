@@ -1,0 +1,28 @@
+.reputation_stats {
+    margin-top: 20px;
+    h3 {
+        margin-bottom: 15px;
+        text-align: center;
+        color: #000;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: capitalize;
+        font-family: 'Inter', sans-serif;
+    }
+    .circle {
+        text-align: center;
+        svg {
+            width: 54px;
+            height: 54px;
+        }
+        margin: 0 auto;
+        position: relative;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width:1110px) {
+    .reputation_stats {
+        margin-top: 7px;
+    }
+}

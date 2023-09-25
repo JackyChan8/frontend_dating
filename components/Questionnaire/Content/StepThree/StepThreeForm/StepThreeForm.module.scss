@@ -1,0 +1,82 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    input {
+        width: 540px;
+        text-align: center;
+    }
+    label {
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 8px;
+        font-family: 'Inter', sans-serif;
+        span {
+            color: #00FF85;
+            font-weight: bold;
+        }
+        .invalid_field {
+            color: red;
+        }
+    }
+
+    textarea {
+        width: 540px;
+        height: 100%;
+        margin-top: 8px;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar { 
+            display: none;
+        }
+    }
+
+    .planSearch, .description_partner, .qualitiesPartner {
+        margin-bottom: 16px;
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    .description_partner {
+        height: 134px;
+        min-height: 134px;
+        max-height: 200px;
+    }
+    .form_button {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin: 30px auto 0px;
+        flex-direction: column;
+        justify-content: center;
+        button {
+            margin-bottom: 10px;
+            background: #F959E9;
+            width: 328px;
+            height: 36px;
+            color: #FFF;
+            text-align: center;
+            border-radius: 16px;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:last-child {
+                background: #43eb4b;
+                margin-bottom: 0px;
+            }
+    
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+}

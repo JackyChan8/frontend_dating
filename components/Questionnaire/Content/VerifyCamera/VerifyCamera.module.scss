@@ -1,0 +1,40 @@
+.cameraBlock {
+    margin-top: 55px;
+    video {
+        width: 630px;
+        height: 400px;
+    }
+    img {
+        width: 534px;
+        height: 400px;
+    }
+    .form_button {
+        gap: 25px;
+        display: flex;
+        margin-top: 61px;
+        text-align: center;
+        align-items: center;;
+        justify-content: center;
+        button {
+            background: #F959E9;
+            width: 328px;
+            height: 36px;
+            color: #FFF;
+            text-align: center;
+            border-radius: 16px;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+    
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+        .repeat {
+            background: #0CB0C7;
+        }
+    }
+}

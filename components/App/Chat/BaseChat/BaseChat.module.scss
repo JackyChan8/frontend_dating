@@ -1,0 +1,27 @@
+$color_1: #2a2a2a;
+
+.chat_panel {
+	display: flex;
+	height: calc(100vh - 207px);
+	overflow-y: hidden;
+	margin: 50px 0px 0px;
+}
+.chat_user_list_panel {
+	height: 650px;
+	width: 430px;
+	background: #f6f6f6;
+	border-radius: 5px;
+	display: inline-block;
+}
+.add_group_btn {
+	padding: 15px 15px 5px;
+	a {
+		color: $color_1;
+		font-size: 20px;
+	}
+}
+.justify_space_between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

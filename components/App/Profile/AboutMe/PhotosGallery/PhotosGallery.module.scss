@@ -1,0 +1,52 @@
+.photos_info {
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-evenly;
+    .arrow_left, .arrow_right {
+        i {
+            font-size: 20px;
+            &:hover {
+                color: #ff54e9;
+            }
+        }
+    }
+    .photos {
+        overflow: hidden;
+        img {
+            width: 185px;
+            height: 140px;
+            border-radius: 5px;
+        }
+    }
+}
+
+@media (max-width:1630px) {
+    .photos_info {
+        .photos {
+            img {
+                width: 177px;
+            }
+        }
+    }
+}
+
+@media (max-width:1490px) {
+    .photos_info {
+        .photos {
+            img {
+                width: 166px;
+            }
+        }
+    }
+}
+
+@media (max-width:1365px) {
+    .photos_info {
+        .photos {
+            img {
+                width: 158px;
+            }
+        }
+    }
+}

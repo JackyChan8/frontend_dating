@@ -1,0 +1,23 @@
+.success_message {
+    text-align: center;
+    .title {
+        p {
+            width: 330px;
+        }
+    }
+
+    button {
+        background: #F959E9;
+        margin-top: 16px;
+        width: 328px;
+        height: 36px;
+        color: #FFF;
+        text-align: center;
+        border-radius: 16px;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

@@ -1,0 +1,175 @@
+.card {
+    width: 1134px;
+    max-width: 1134px;
+    height: 380px;
+    min-height: 330px;
+    align-self: start;
+    text-align: center;
+    justify-self: center;
+    grid-area: calendarDate;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.accept_status {
+    color: #fff;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    font-size: 12px;
+    border-radius: 2px;
+    align-items: center;
+    background: #00D2A0;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+}
+
+.wait_status {
+    color: #fff;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    font-size: 12px;
+    border-radius: 2px;
+    align-items: center;
+    background: #00B4ED;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+}
+
+.reject_status {
+    color: #fff;
+    width: 48px;
+    height: 24px;
+    display: flex;
+    font-size: 12px;
+    border-radius: 2px;
+    align-items: center;
+    background: #FF5454;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+}
+
+.name_person {
+    color: #000;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.status_accept {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    i {
+        color: #21FB0E;
+    }
+    h2 {
+        color: #21FB0E;
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        text-transform: capitalize;
+    }
+}
+
+.status_waiting {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    i {
+        color: #00B4ED;
+    }
+    h2 {
+        color: #00B4ED;
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        text-transform: capitalize;
+    }
+}
+
+.status_rejected {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 5px;
+    i {
+        color: #FF5454;
+    }
+    h2 {
+        color: #FF5454;
+        font-family: 'Inter', sans-serif;
+        font-size: 11px;
+        text-transform: capitalize;
+    }
+}
+
+.header_calendar {
+    display: flex;
+    justify-content: space-between;
+    .left_block {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        i {
+            font-size: 30px;
+            color: #FF54E9;
+        }
+        span {
+            color: #000;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-family: "Inter", sans-serif;
+        }
+    }
+}
+
+@media (max-width:1630px) {
+    .card {
+        width: 1035px;
+        justify-self: right;
+    }
+}
+
+@media (max-width:1490px) {
+    .card {
+        width: 968px;
+    }
+}
+
+@media (max-width:1365px) {
+    .card {
+        width: 938px;
+        justify-self: center;
+    }
+}
+
+@media (max-width:1300px) {
+    .card {
+        width: 870px;
+        justify-self: right;
+    }
+}
+
+@media (max-width:1240px) {
+    .card {
+        width: 790px;
+    }
+}
+
+@media (max-width:1110px) {
+    .card {
+        width: 745px;
+    }
+}

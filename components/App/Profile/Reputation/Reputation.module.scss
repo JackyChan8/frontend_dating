@@ -1,0 +1,44 @@
+.profile__reputation {
+    width: 320px;
+    // height: 408px;
+    height: 373px;
+    background: #fff;
+    border-radius: 5px;
+    justify-self: center;
+    align-self: center;
+    grid-area: reputation;
+    padding: 17px 72px 0px;
+    box-shadow: 0px 4px 4px #cbcbcb;
+    .reputation__title {
+        h2 {
+            text-align: center;
+            color: #000;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width:1300px) {
+    .profile__reputation {
+        width: 265px;
+        padding: 17px 40px 0px;
+    }
+}
+
+@media (max-width:1190px) {
+    .profile__reputation {
+        width: 235px;
+        padding: 17px 25px 0px;
+    }
+}
+
+@media (max-width:1110px) {
+    .profile__reputation {
+        align-self: start;
+        height: 320px;
+        padding: 10px 25px 0px;
+    }
+}

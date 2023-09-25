@@ -1,0 +1,95 @@
+$color_3: #ffffff;
+$color_6: #808080;
+$color_9: #4c4d50;
+
+.sender {
+	margin: 15px 0px;
+	text-align: right;
+}
+.send_time {
+	padding-top: 5px;
+	font-size: 12px;
+	line-height: 18px;
+	color: $color_6;
+}
+.sender_msg {
+	padding: 5px 15px;
+	background: #1d437e;
+	color: $color_3;
+	border-radius: 10px 10px 0 10px;
+	display: inline-block;
+}
+
+.receiver_msg {
+	padding: 5px 15px;
+	background: #f6f6f6;
+	color: $color_9;
+	border-radius: 10px 10px 10px 0px;
+	display: inline-block;
+}
+
+.msg_img {
+	margin: 10px 0px 5px;
+	height: 150px;
+	width: 150px;
+	border-radius: 10px 10px 10px 0px;
+	display: inline-block;
+}
+
+// .received {
+//     justify-content: left;
+//     gap: 18px;
+// }
+// .send {
+//     justify-content: right;
+// }
+
+// .message {
+//     display: flex;
+//     align-items: center;
+//     margin-bottom: 20px;
+//     .message__avatar {
+//         gap: 9px;
+//         display: flex;
+//         align-items: center;
+//         flex-direction: column;
+//         justify-content: center;
+//         img {
+//             width: 72px;
+//             height: 72px;
+//             border-radius: 50%;
+//         }
+//         .message__time {
+//             p {
+//                 color: #000;
+//                 text-align: center;
+//                 font-family: Inter;
+//                 font-size: 16px;
+//             }
+//         }
+//     }
+//     .message__text {
+//         p {
+//             color: #FFF;
+//             display: flex;
+//             padding: 20px 28px;
+//             font-size: 21px;
+//             min-width: 310px;
+//             max-width: 525px;
+//             line-height: 27px;
+//             min-height: 104px;
+//             font-family: Inter;
+//             align-items: center;
+//             background: #F959E9;
+//             justify-content: center;
+//             border-radius: 0px 28px 28px 30px;
+//         }
+//     }
+//     .message__text_send {
+//         p {
+//             color: #3E3E3E;
+//             border-radius: 32px 0px 33px 33px;
+//             background: #45FFD2;
+//         }
+//     }
+// }

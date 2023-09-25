@@ -1,0 +1,208 @@
+form {
+    .form_header, .form_description, .form_tags {
+        display: flex;
+        margin-top: 18px;
+        flex-direction: column;
+        &:first-child {
+            margin-top: 0px;
+        }
+        label {
+            color: #FFF;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+        }
+        input {
+            margin-top: 8px;
+            width: 540px;
+            height: 44px;
+        }
+    }
+    .form_description {
+        min-height: 134px;
+        height: 134px;
+        max-height: 200px;
+        textarea {
+            width: 540px;
+            height: 100%;
+            margin-top: 8px;
+            overflow-y: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar { 
+                display: none;
+            }
+        }
+    }
+    .form_tags {
+        .multi_select {
+            margin-top: 8px;
+            width: 540px;
+        }
+    }
+
+    .form_button {
+        margin-top: 30px;
+        text-align: center;
+        button {
+            background: #F959E9;
+            width: 328px;
+            height: 36px;
+            color: #FFF;
+            text-align: center;
+            border-radius: 16px;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+    
+            &:hover {
+                background: #fff;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width:560px) {
+    form {
+        .form_header {
+            input {
+                width: 470px;
+            }
+        }
+        .form_tags {
+            .multi_select {
+                width: 470px;
+            }
+        }
+        .form_description {
+            textarea {
+                width: 470px;
+            }
+        }
+    }
+}
+
+@media (max-width:490px) {
+    form {
+        .form_header {
+            input {
+                width: 400px;
+            }
+        }
+        .form_tags {
+            .multi_select {
+                width: 400px;
+            }
+        }
+        .form_description {
+            textarea {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width:415px) {
+    form {
+        margin-top: 30px;
+        .form_header {
+            input {
+                width: 340px;
+            }
+        }
+        .form_tags {
+            .multi_select {
+                width: 340px;
+            }
+        }
+        .form_description {
+            textarea {
+                width: 340px;
+            }
+        }
+        .form_button {
+            button {
+                width: 270px;
+            }
+        }
+    }
+}
+
+@media (max-width:389px) {
+    form {
+        margin-top: 5px;
+        .form_header {
+            label {
+                font-size: 12px;
+            }
+            input {
+                width: 300px;
+            }
+        }
+        .form_tags {
+            margin-top: 10px;
+            label {
+                font-size: 12px;
+            }
+            .multi_select {
+                width: 300px;
+            }
+        }
+        .form_description {
+            margin-top: 10px;
+            label {
+                font-size: 12px;
+            }
+            textarea {
+                width: 300px;
+            }
+        }
+        .form_button {
+            margin-top: 15px;
+            button {
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width:319px) {
+    form {
+        .form_header {
+            label {
+                font-size: 10px;
+            }
+            input {
+                margin-top: 5px;
+                width: 260px;
+            }
+        }
+        .form_tags {
+            label {
+                font-size: 10px;
+            }
+            .multi_select {
+                margin-top: 5px;
+                width: 260px;
+            }
+        }
+        .form_description {
+            label {
+                font-size: 10px;
+            }
+            textarea {
+                margin-top: 5px;
+                width: 260px;
+            }
+        }
+        .form_button {
+            margin-top: 10px;
+            button {
+                width: 200px;
+            }
+        }
+    }
+}

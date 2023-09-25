@@ -1,0 +1,355 @@
+@import "./carousel.module.scss";
+
+.main_page {
+    .welcome_page {
+        width: 100%;;
+        display: flex;
+        justify-content: center;
+        .welcome {
+            .welcome__title {
+                width: 661px;
+                font-size: 65px;
+                color: #000530;
+                font-weight: 400;
+                margin: 0 0 0 1px;
+                font-style: normal;
+                line-height: normal;
+                text-transform: uppercase;
+                font-family: 'Inria Sans', sans-serif;
+            }
+            .welcome__text {
+                width: 493px;
+                color: #333;
+                font-size: 30px;
+                font-weight: 400;
+                margin: 50px 0 0 0;
+                font-style: normal;
+                line-height: normal;
+                font-family: 'Jaldi', sans-serif;
+            }
+            .btn_connect {
+                margin: 35px 0 0 7px;
+            }
+        }
+        .social_media {
+            top: 254px;
+            right: 29px;
+            position: absolute;
+            z-index: 10;
+            .social_media__link {
+                display: flex;
+                margin: 15px 0;
+                align-items: center;
+                justify-content: space-between;
+                .social_media__circle {
+                    width: 50px;
+                    height: 50px;
+                    position: relative;
+                    border-radius: 50%;
+                    background: #fff;
+                    .social_media__image {
+                        top: 50%;
+                        left: 50%;
+                        position: absolute;
+                        transform:translate(-50%, -50%);
+
+                        &:hover {
+                            filter: invert(52%) sepia(16%) saturate(7171%) hue-rotate(284deg) brightness(105%) contrast(105%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .welcome_page_mobile {
+        display: none;
+    }
+}
+
+// Adaptive
+@media (max-width:1760px) {
+    .main_page {
+        .carousel {
+            width: 430px;
+            height: 430px;
+            img {
+                width: 430px;
+                height: 430px;
+            }
+        }
+    }
+}
+
+@media (max-width:1560px) {
+    .main_page {
+        .welcome_page {
+            .welcome {
+                .welcome__title {
+                    width: 595px;
+                    font-size: 60px;
+                }
+            }
+        }
+        .carousel {
+            width: 400px;
+            height: 400px;
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media (max-width:1470px) {
+    .main_page {
+        .welcome_page {
+            .welcome {
+                .welcome__title {
+                    width: 493px;
+                    font-size: 48px;
+                }
+            }
+        }
+        .carousel {
+            width: 360px;
+            height: 360px;
+            img {
+                width: 360px;
+                height: 360px;
+            }
+        }
+    }
+}
+
+@media (max-width:1305px) {
+    .main_page {
+        .carousel {
+            width: 340px;
+            height: 340px;
+            img {
+                width: 340px;
+                height: 340px;
+            }
+        }
+    }
+}
+
+@media (max-width:1250px) {
+    .main_page {
+        .welcome_page {
+            .welcome {
+                .welcome__title {
+                    width: 445px;
+                    font-size: 44px;
+                }
+                .welcome__text {
+                    width: 446px;
+                    font-size: 22px;
+                }
+            }
+            .social_media {
+                .social_media__link {
+                    .social_media__circle {
+                        width: 40px;
+                        height: 40px;
+                        svg {
+                            width: 24px;
+                            height: 22px;
+                        }
+                    }
+                }
+            }
+        }
+        .carousel {
+            width: 320px;
+            height: 320px;
+            img {
+                width: 320px;
+                height: 320px;
+            }
+        }
+    }
+}
+
+@media (max-width:1220px) {
+    .main_page {
+        .carousel {
+            width: 300px;
+            height: 300px;
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+}
+
+@media (max-width:1135px) {
+    .main_page {
+        .welcome_page {
+            .welcome {
+                .welcome__title {
+                    width: 395px;
+                    font-size: 39px;
+                }
+                .welcome__text {
+                    width: 396px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1080px) {
+    .main_page {
+        .carousel {
+            width: 270px;
+            height: 270px;
+            img {
+                width: 270px;
+                height: 270px;
+            }
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .main_page {
+        .welcome_page {
+            display: none;
+        }
+        .welcome_page_mobile {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            padding: 200px 0;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            .welcome {
+                .welcome__title {
+                    width: 740px;
+                    font-size: 65px;
+                    color: #000530;
+                    font-weight: 400;
+                    text-align: center;
+                    font-style: normal;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    font-family: 'Inria Sans', sans-serif;
+                }
+            }
+            .carousel {
+                width: 50%;
+                padding: 130px;
+                max-width: 100%;
+                transform: none;
+                margin-top: 40px;
+                .carousel__image {
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .welcome_description {
+                display: flex;
+                margin-top: 45px;
+                align-items: center;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .text {
+                    width: 550px;
+                    color: #333;
+                    font-size: 40px;
+                    font-weight: 400;
+                    text-align: center;
+                    font-style: normal;
+                    line-height: normal;
+                    font-family: 'Jaldi', sans-serif;
+                }
+                .btn-connect {
+                    width: 310px;
+                    height: 80px;
+                    font-size: 25px;
+                    margin-top: 53px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .main_page {
+        .welcome_page_mobile {
+            .welcome {
+                .welcome__title {
+                    width: 590px;
+                    font-size: 40px;
+                }
+            }
+            .welcome_description {
+                width: 400px;
+                .text {
+                    width: 400px;
+                    font-size: 30px;
+                }
+            }
+            .carousel {
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .main_page {
+        .welcome_page_mobile {
+            .welcome {
+                .welcome__title {
+                    width: 400px;
+                    font-size: 30px;
+                }
+            }
+            .welcome_description {
+                margin-top: 0px;
+                width: 360px;
+                .text {
+                    width: 360px;
+                    font-size: 25px;
+                }
+                button {
+                    margin-top: 5px;
+                }
+            }
+            .carousel {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .main_page {
+        .welcome_page_mobile {
+            .welcome {
+                .welcome__title {
+                    font-size: 25px;
+                    width: 285px;
+                }
+            }
+            .welcome_description {
+                width: 285px;
+                .text {
+                    width: 280px;
+                    font-size: 18px;
+                }
+            }
+            .carousel {
+                margin-top: 10px;
+            }
+        }
+    }
+}

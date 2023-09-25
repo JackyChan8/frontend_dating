@@ -1,0 +1,92 @@
+.profile__card {
+    width: 300px;
+    height: 373px;
+    grid-area: card;
+    padding: 48px 0px;
+    background: #FFF;
+    border-radius: 5px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0px 4px 4px #cbcbcb;
+    .card__image {
+        .card__image_circle {
+            width: 84px;
+            height: 84px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 50%;
+            border: 4px solid #FB41FF;
+            img {
+                top: 50%;
+                left: 50%;
+                width: 68px;
+                height: 68px;
+                position: absolute;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .card__name {
+        margin-top: 20px;
+        h2 {
+            color: #000;
+            font-size: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+    .card__year {
+        margin-top: 8px;
+        h3 {
+            color: #000;
+            font-size: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+        }
+    }
+    .card__progress {
+        margin-top: 39px;
+    }
+    .card__statistics {
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: center;
+
+        .amount__likes, .amount__views, .amount__dates {
+            h2 {
+                color: #000;
+                font-size: 15px;
+                font-weight: 800;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+            }
+            p {
+                color: #000;
+                font-size: 9px;
+                margin-top: 15px;
+                font-weight: 800;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+            }
+        }
+    }
+}
+
+@media (max-width:1300px) {
+    .profile__card {
+        width: 265px;
+    }
+}
+
+@media (max-width:1110px) {
+    .profile__card {
+        width: 235px;
+        height: 320px;
+        padding: 40px 0px;
+        align-self: start;
+    }
+}

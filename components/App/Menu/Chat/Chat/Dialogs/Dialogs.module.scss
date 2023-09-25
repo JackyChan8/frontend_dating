@@ -1,0 +1,56 @@
+.dialogs {
+    .sub_title {
+        color: #FAE208;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+    }
+    .chats {
+        gap: 8px;
+        display: flex;
+        padding: 15px 0px 26px 0px;
+        justify-content: center;
+        button {
+            width: 38px;
+            height: 38px;
+            background: none;
+            border-radius: 38px;
+            img {
+                width: 38px;
+                height: 38px;
+                border-radius: 38px;
+
+                &:hover {
+                    border: 1px solid #FAE208;
+                }
+            }
+            .chat_active {
+                border: 2px solid #F959E9;
+            }
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .dialogs {
+        .chats {
+            gap: 50px;
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .dialogs {
+        .chats {
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .dialogs {
+        .chats {
+            gap: 8px;
+        }
+    }
+}

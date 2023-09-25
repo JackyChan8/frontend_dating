@@ -1,0 +1,40 @@
+.forget_block {
+    display: flex;
+    width: 328px;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .cross_icon {
+        position: absolute;
+        top: 25px;
+        right: 50px;
+        i {
+            font-size: 35px;
+            color: #f959e9;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media (max-width: 475px) {
+    .forget_block {
+        .cross_icon {
+            right: 31px;
+        }
+    }
+}
+
+@media (max-width: 330px) {
+    .forget_block {
+        .form_block {
+            input, button {
+                width: 250px;
+            }
+        }
+    }
+}

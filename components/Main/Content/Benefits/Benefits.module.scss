@@ -1,0 +1,150 @@
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 106px;
+    .benefits__description {
+        width: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .benefits__description__mobile {
+        display: none;
+    }
+    .benefits__btn__mobile {
+        display: none;
+    }
+}
+
+.benefits__title {
+    color: #000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.benefits__text {
+    margin-top: 35px;
+    color: #000;
+    font-family: 'Jaldi', sans-serif;;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+// Adaptive
+@media (max-width:1760px) {
+    .benefits {
+        .card {
+            .galleria {
+                width: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width:1470px) {
+    .benefits {
+        gap: 30px;
+    }
+}
+
+@media (max-width:1380px) {
+    .benefits {
+        gap: 0;
+        .benefits__description {
+            width: 520px;
+            .benefits__title {
+                width: 470px;
+                font-size: 37px;
+            }
+            .benefits__text {
+                width: 470px;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width:1175px) {
+    .benefits {
+        .benefits__description {
+            width: 350px;
+            .benefits__title {
+                width: 350px;
+                font-size: 37px;
+                text-align: center;
+            }
+            .benefits__text {
+                width: 350px;
+            }
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        .benefits__description {
+            display: none;
+            button {
+                display: none;
+            }
+        }
+        .benefits__description__mobile {
+            display: block;
+            .benefits__title {
+                text-align: center;
+            }
+        }
+        .benefits__btn__mobile {
+            display: block;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .benefits {
+        .benefits__description__mobile {
+            .benefits__title {
+                font-size: 38px;
+            }
+            .benefits__text {
+                    font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .benefits {
+        .benefits__description__mobile {
+            .benefits__title {
+                font-size: 30px;
+            }
+            .benefits__text {
+                margin-top: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:280px) {
+    .benefits {
+        .benefits__description__mobile {
+            .benefits__title {
+                font-size: 25px;
+            }
+            .benefits__text {
+                font-size: 18px;
+            }
+        }
+    }
+}

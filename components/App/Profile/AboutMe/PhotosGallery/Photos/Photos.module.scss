@@ -1,0 +1,36 @@
+.card {
+    width: 100%;
+}
+
+.carousel__image {
+    margin-right: 5px;
+}
+
+.contentClass {
+    justify-content: center;
+    width: 666px;
+}
+
+@media (max-width:1630px) {
+    .contentClass {
+        width: 640px;
+    }
+}
+
+@media (max-width:1490px) {
+    .contentClass {
+        width: 605px;
+    }
+}
+
+@media (max-width:1365px) {
+    .contentClass {
+        width: 582px;
+    }
+}
+
+@media (max-width:1300px) {
+    .contentClass {
+        width: 420px;
+    }
+}

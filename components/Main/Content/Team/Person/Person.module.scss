@@ -1,0 +1,243 @@
+.person {
+    width: 472px;
+    height: 435px;
+    position: relative;
+    border-radius: 20px;
+    background: #F8FAFC;
+    .person__photo {
+        width: 161px;
+        height: 161px;
+        border-radius: 50%;
+        position: absolute;
+        top: -5rem;
+        right: 2rem;
+    }
+    .person__solial_networks {
+        display: flex;
+        justify-content: space-between;
+        width: 160px;
+        margin: 96px 0 0 34px;
+        .person__solial_link {
+            img {
+                height: 25px;
+                width: 25px;
+                filter: invert(52%) sepia(16%) saturate(7171%) hue-rotate(284deg) brightness(105%) contrast(105%);
+
+                &:hover {
+                    filter: invert(5%) sepia(73%) saturate(3083%) hue-rotate(225deg) brightness(91%) contrast(110%);
+                }
+            }
+        }
+    }
+    .person__fullname {
+        font-family: 'Inknut Antiqua';
+        margin: 14px 0 0 33px;
+        color: #000530;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+    .person__job {
+        font-family: 'Inknut Antiqua';
+        margin: 0 0 0 34px;
+        color: #000;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+    .person__description {
+        margin: 22px 0 0 34px;
+        width: 404px;
+        color: #000;
+        font-family: 'Jaldi';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+}
+
+
+@media (max-width:1250px) {
+    .person {
+        width: 430px;
+        height: 380px;
+        .person__photo {
+            width: 141px;
+            height: 141px;
+        }
+        .person__solial_networks {
+            .person__solial_link {
+                height: 20px;
+                width: 20px;
+                svg {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+        .person__fullname {
+            font-size: 18px;
+        }
+        .person__description {
+            font-size: 14px;
+            width: 364px;
+        }
+    }
+}
+
+@media (max-width:1135px) {
+    .person {
+        width: 395px;
+        height: 340px;
+        .person__photo {
+            width: 120px;
+            height: 120px;
+        }
+        .person__solial_networks {
+            margin: 75px 0 0 34px;
+        }
+        .person__description {
+            width: 330px;
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .person {
+        width: 400px;
+        height: 350px;
+        margin-bottom: 65px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        .person__photo {
+            width: 120px;
+            height: 100px;
+            top: -3rem;
+            right: 2rem;
+        }
+        .person__fullname {
+            font-size: 22px;
+            text-align: center;
+            margin: 0;
+        }
+        .person__job {
+            margin: 0;
+            font-size: 16px;
+            text-align: center;
+            line-height: inherit;
+        }
+        .person__solial_networks {
+            margin: 65px 0 0 34px;
+            .person__solial_link {
+                svg {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+        .person__description {
+            margin: 0;
+            width: 100%;
+            padding: 34px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .person {
+        width: 290px;
+        height: 250px;
+        .person__photo {
+            width: 80px;
+            height: 80px;
+        }
+        .person__solial_networks {
+            margin-top: 30px;
+        }
+        .person__fullname {
+            font-size: 18px;
+        }
+
+        .person__job {
+            font-size: 14px;
+        }
+        .person__description {
+            font-size: 12px;
+            padding-top: 12px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .person {
+        width: 215px;
+        height: 185px;
+        margin-bottom: 40px;
+        .person__solial_networks {
+            justify-content: start;
+            a {
+                margin-right: 8px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+            .person__solial_link {
+                img {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+        }
+        .person__fullname {
+            font-size: 12px;
+        }
+        .person__job {
+            font-size: 9px;
+        }
+        .person__description {
+            font-size: 8px;
+        }
+        .person__photo {
+            top: -2rem;
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+@media (max-width:300px) {
+    .person {
+        width: 185px;
+        height: 165px;
+        .person__solial_networks {
+            .person__solial_link {
+                img {
+                    height: 14px;
+                    width: 14px;
+                }
+            }
+        }
+        .person__fullname {
+            font-size: 10px;
+        }
+        .person__job {
+            font-size: 8px;
+        }
+        .person__description {
+            font-size: 6px;
+        }
+        .person__photo {
+            right: 1rem;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

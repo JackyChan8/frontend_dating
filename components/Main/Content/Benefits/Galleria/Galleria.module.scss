@@ -1,0 +1,135 @@
+.card {
+    .galleria {
+        .p-galleria-thumbnail-item {
+            background-color: red;
+        }
+        .title_text {
+            margin-left: 10px;
+            font-family: 'Inknut Antiqua', serif;
+            color: #fff;            
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            &::before {
+                margin-left: 10px;
+            }
+        }
+        .text_text {
+            margin: 0px 10px 10px 10px;
+            color: #fff;
+            font-family: 'Jaldi', sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}
+
+// Adaptive
+@media (max-width:1760px) {
+    .card {
+        .galleria {
+            width: 750px;
+        }
+    }
+}
+
+@media (max-width:1610px) {
+    .card {
+        .galleria {
+            width: 700px;
+        }
+    }
+}
+
+@media (max-width:1560px) {
+    .card {
+        .galleria {
+            width: 650px;
+        }
+    }
+}
+
+@media (max-width:1500px) {
+    .card {
+        .galleria {
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width:1290px) {
+    .card {
+        .galleria {
+            width: 500px;
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .card {
+        width: 700px;
+        .galleria {
+            width: 700px;
+        }
+    }
+}
+
+@media (max-width:767px) {
+    .card {
+        margin-top: 220px;
+        width: 600px;
+        .galleria {
+            width: 600px;
+        }
+    }
+}
+
+@media (max-width:640px) {
+    .card {
+        width: 550px;
+        .galleria {
+            width: 550px;
+        }
+    }
+}
+
+@media (max-width:592px) {
+    .card {
+        width: 480px;
+        .galleria {
+            width: 480px;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .card {
+        margin-top: 30px;
+        width: 350px;
+        .galleria {
+            width: 350px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .card {
+        margin-top: 10px;
+        width: 270px;
+        .galleria {
+            width: 280px;
+        }
+    }
+}
+
+@media (max-width:280px) {
+    .card {
+        .galleria {
+            width: 270px;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+$color_5: #e12026;
+$color_6: #808080;
+$color_8: #000000;
+
+.align_item_center {
+	display: flex;
+	align-items: center
+};
+
+box {
+	position: relative;
+}
+
+.inputfile_1 {
+	+ {
+		label {
+			margin-bottom: 0;
+			cursor: pointer;
+		}
+	}
+}
+
+.write_comment {
+	width: 100%;
+    // margin-top: 30px;
+    position: absolute;
+    bottom: 20px;
+    .form_group {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+        margin: 0;
+        width: 100%;
+    }
+    a {
+        display: inline-block;
+        padding: 10px;
+        color: $color_6;
+    }
+}
+
+.form_control {
+	width: 100%;
+	&:focus {
+		box-shadow: none;
+	}
+	&:not(output) {
+		&:-moz-ui-invalid {
+			box-shadow: none;
+		}
+	}
+}
+
+.submit_comment {
+	margin-left: 20px;
+	background: transparent;
+	border: none;
+	color: $color_5;
+	font-size: 25px;
+	&:hover {
+		color: $color_8;
+	}
+	i {
+		font-size: 20px;
+	}
+}
+
+// .messages_control {
+//     // position: absolute;
+//     // bottom: 20px;
+//     gap: 20px;
+//     height: 94px;
+//     width: 777px;
+//     display: flex;
+//     .input {
+//         gap: 20px;
+//         width: 663px;
+//         display: flex;
+//         align-items: center;
+//         border-radius: 50px;
+//         justify-content: center;
+//         background: rgba(217, 217, 217, 1);
+//         textarea {
+//             width: 459px;
+//             resize: none;
+//             font-size: 18px;
+//             background: none;
+//             text-align: center;
+//             min-height: 70px;
+//             padding-top: 28px;
+//             color: rgba(10, 18, 90, 0.50);
+//             &::placeholder {
+//                 position: absolute;
+//                 top: 50%;
+//                 left: 50%;
+//                 transform: translate(-50%, -50%);
+//             }
+//             &:focus {
+//                 &::placeholder {
+//                     display: none;
+//                 }
+//             }
+//         }
+//         img {
+//             width: 40px;
+//             height: 40px;
+//         }
+//         i {
+//             font-size: 40px;
+//             color: #0A125A;
+//         }
+//     }
+//     .send {
+//         button {
+//             width: 94px;
+//             height: 94px;
+//             border-radius: 50%;
+//             i {
+//                 font-size: 40px;
+//                 color: #0A125A;
+//             }
+//         }
+//     }
+// }

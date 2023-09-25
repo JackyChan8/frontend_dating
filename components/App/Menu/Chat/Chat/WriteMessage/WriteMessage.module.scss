@@ -1,0 +1,99 @@
+.write__message {
+    padding-top: 13px;
+    background: #fff;
+    .line {
+        width: 90%;
+        height: 1px;
+        margin: 0 auto;
+        background: rgba(10, 18, 90, 0.70);
+    }
+    form {
+        gap: 10px;
+        display: flex;
+        margin-top: 17px;
+        align-items: start;
+        justify-content: center;
+        textarea {
+            resize: none;
+            width: 318px;
+            font-size: 14px;
+            color: #0A125A;
+            overflow: scroll;
+            padding-left: 10px;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        button {
+            background: none;
+            i {
+                color: #0A125A;
+                font-size: 25px;
+                &:hover {
+                    color: #ff54e9;
+                }
+            }
+        }
+    }
+    .panel__attach {
+        float: left;
+        display: flex;
+        align-items: center;
+        margin: 10px 0px 15px 26px;
+        button {
+            background: none;
+            margin-right: 15px;
+            img {
+                width: 20px;
+                height: 20px;
+                &:hover {
+                    filter: invert(52%) sepia(16%) saturate(7171%) hue-rotate(284deg) brightness(105%) contrast(105%);
+                }
+            }
+            i {
+                color: #0A125A;
+                &:hover {
+                    color: #ff54e9;
+                }
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width:1023px) {
+    .write__message {
+        .line {
+            display: none;
+        }
+        form {
+            padding: 0px 50px;
+            textarea {
+                width: 100%;
+            }
+        }
+        .panel__attach {
+            margin: 10px 0px 15px 50px;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    .write__message {
+        .line {
+            display: block;
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .write__message {
+        form {
+            padding: 0px 20px;
+        }
+    }
+}

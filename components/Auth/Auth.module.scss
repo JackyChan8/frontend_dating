@@ -1,0 +1,161 @@
+.auth_block {
+    display: flex;
+    width: 328px;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .logo {
+        img {
+            width: 150px;
+            height: 147px;
+            border-radius: 14px;
+        }
+    }
+    .forget_password {
+        margin-top: 25px;
+        a {
+            color: #fff;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+
+            &:hover {
+                color: #f959e9;
+            }
+        }
+    }
+    .intermediate {
+        display: flex;
+        margin-top: 28px;
+        align-items: center;
+        .line_left, .line_right {
+            width: 135px;
+            height: 1px;
+            margin: 0px 15px;
+            background: #fff;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    .register {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 33px;
+        p {
+            color: #fff;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        a {
+            color: #F959E9;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+    .mobile_app_logo {
+        gap: 25px;
+        display: flex;
+        margin-top: 135px;
+        align-items: center;
+        img {
+            height: 40px;
+            width: 121px;
+            &:last-child {
+                height: 52px;
+            }
+        }
+    }
+}
+
+@media (max-width:360px) {
+    .auth_block {
+        .intermediate {
+            .line_left, .line_right {
+                width: 100px;
+            }
+        }
+        .register {
+            gap: 10px;
+            justify-content: center;
+            p {
+                font-size: 14px;
+            }
+            a {
+                font-size: 13px;
+            }
+        }
+        .mobile_app_logo {
+            margin-top: 60px;
+        }
+    }
+}
+
+
+@media (max-width: 300px) {
+    .auth_block {
+        .intermediate {
+            .line_left, .line_right {
+                width: 80px;
+            }
+        }
+        .register {
+            p {
+                font-size: 12px;
+            }
+            a {
+                font-size: 12px;
+            }
+        }
+        .mobile_app_logo {
+            img {
+                height: 31px;
+                width: 100px;
+                &:last-child {
+                    height: 45px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 260px) {
+    .auth_block {
+        .intermediate {
+            .line_left, .line_right {
+                width: 60px;
+            }
+        }
+        .register {
+            p {
+                font-size: 10px;
+            }
+            a {
+                font-size: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.profile_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    .block_profile {
+        margin-top: 50px;
+        // width: 1600px;
+        max-width: 1600px;
+        height: 750px;
+        background: #fff;
+        border-radius: 40px;
+        .profile {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            // grid-template-columns: 363px 1fr 403px;
+            grid-template-columns: minmax(100px, 363px) minmax(400px, 1fr) minmax(100px, 403px);
+            grid-template-areas: "card aboutMe reputation" "calendarDate calendarDate reviews";
+        }
+    }
+}
+
+// Adaptive
+@media (max-width:1630px) {
+    .profile_container {
+        .block_profile {
+            width: 1470px;
+        }
+    }
+}
+
+@media (max-width:1490px) {
+    .profile_container {
+        .block_profile {
+            width: 1400px;
+        }
+    }
+}
+
+@media (max-width:1430px) {
+    .profile_container {
+        .block_profile {
+            border-radius: 30px;
+            width: 1340px;
+            .profile {
+                grid-template-columns: minmax(100px, 330px) minmax(400px, 1fr) minmax(100px, 354px);
+            }
+        }
+    }
+}
+
+@media (max-width:1365px) {
+    .profile_container {
+        .block_profile {
+            width: 1280px;
+            border-radius: 20px;
+            .profile {
+                grid-template-columns: minmax(100px, 310px) minmax(400px, 1fr) minmax(100px, 330px);
+            }
+        }
+    }
+}
+
+@media (max-width:1300px) {
+    .profile_container {
+        .block_profile {
+            width: 1220px;
+        }
+    }
+}
+
+@media (max-width:1240px) {
+    .profile_container {
+        .block_profile {
+            width: 1140px;
+        }
+    }
+}
+
+@media (max-width:1190px) {
+    .profile_container {
+        .block_profile {
+            width: 1080px;
+            .profile {
+                grid-template-columns: minmax(100px, 285px) minmax(400px, 1fr) minmax(100px, 277px);
+            }
+        }
+    }
+}
+
+@media (max-width:1110px) {
+    .profile_container {
+        .block_profile {
+            width: 1000px;
+            height: 690px;
+            .profile {
+                grid-template-rows: 325px 1fr;
+                grid-template-columns: minmax(100px, 254px) minmax(400px, 1fr) minmax(100px, 245px)
+            }
+        }
+    }
+}
+
+@media (max-width:1023px) {}
+
+@media (max-width:767px) {}
+
+@media (max-width:500px) {}
+
+@media (max-width:375px) {}

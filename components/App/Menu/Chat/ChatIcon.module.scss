@@ -1,0 +1,45 @@
+.chat_block {
+    position: absolute;
+    right: 44px;
+    bottom: 75px;
+}
+
+.chat_icon_chat {
+    width: 4rem;
+    height: 4rem;
+    background: none;
+
+    i {
+        color: #00FF85;
+        font-size: 40px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+
+
+@media (max-width:1023px) {
+    .chat_block {
+        right: 0;
+        bottom: -15px;
+        z-index: 10;
+        width: 100%;
+        position: absolute;
+    }
+    .chat_icon_chat {
+        i {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .chat_icon_chat {
+        i {
+            font-size: 30px;
+        }
+    }
+}

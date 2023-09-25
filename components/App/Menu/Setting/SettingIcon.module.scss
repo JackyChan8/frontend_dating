@@ -1,0 +1,97 @@
+// .chat_icon_settings {
+//     background: none;
+
+//     i {
+//         color: #00FF85;
+//         font-size: 40px;
+
+//         &:hover {
+//             color: #fff;
+//         }
+//     }
+// }
+
+.buttonHelp {
+    background: none;
+    border: none;
+    &:enabled:hover {
+        background: none;
+        border: none;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+    span {
+        color: #00FF85;
+        font-size: 40px;
+        &:hover {
+            color: #fff;
+        }
+    }
+
+}
+
+.maskClassName {
+    position: relative;
+    padding: 0px;
+    a {
+        background: #fff;
+        &:hover {
+            background: #40FFD1;
+        }
+        span {
+            font-size: 20px;
+            color: #ff54e9;
+        }
+    }
+    button {
+        padding: 0px;
+    }
+}
+
+@media (max-width:1023px) {
+    .buttonHelp {
+        span {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .buttonHelp {
+        span {
+            font-size: 30px;
+        }
+    }
+}
+
+// @media (max-width:1023px) {
+//     .buttonHelp {
+//         span {
+//             left: 30px;
+//             font-size: 35px;
+//         }
+//     }
+    
+//     // .chat_icon_settings {
+//     //     i {
+//     //         font-size: 35px;
+//     //     }
+//     // }
+//     .chat_icon_settings {
+//         left: 30px;
+//     }
+// }
+
+// @media (max-width:320px) {
+//     .chat_icon_settings {
+//         bottom: 30px;
+//         i {
+//             font-size: 30px;
+//         }
+//     }
+
+//     .chat_icon_settings {
+//         left: 10px;
+//     }
+// }
