@@ -12,7 +12,7 @@ import { selectDialog } from "@/app/redux/chat/dialogs/selectors";
 import { changeLastMessage, incrementCountMessages } from "@/app/redux/chat/dialogs/slice";
 
 // Socket
-import socket from "@/components/App/Chat/socket/socket";
+import socketChat from '@/app/socket/chat/socket';
 
 import { Dialog as DialogType } from "@/components/App/Chat/types/types";
 
@@ -48,7 +48,7 @@ const BaseDialogs = () => {
       dialog: Dialog;
     };
     // Получение Нового сообщения
-    socket.on("server:new_message", (message: GetMessageChat) => {
+    socketChat.on("server:new_message", (message: GetMessageChat) => {
       console.log('server:new_message - BaseDialogs: ', message);
       const authorId = message.dialog.author.id;
       const partnerId = message.dialog.partner.id;
@@ -68,7 +68,7 @@ const BaseDialogs = () => {
     });
     return () => {
       // Удаление обработчика server:new_message
-      socket.removeListener('server:new_message');
+      socketChat.removeListener('server:new_message');
     }
   }, []);
 

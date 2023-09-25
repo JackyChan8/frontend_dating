@@ -20,7 +20,8 @@ import { selectDialog } from "@/app/redux/chat/dialogs/selectors";
 import { getAllDialogs } from "@/app/redux/chat/dialogs/asyncActions";
 
 // Socket
-import socket from '@/components/App/Chat/socket/socket';
+import socketNotify from "@/app/socket/notify/socket";
+import socketChat from '@/app/socket/chat/socket';
 
 const BaseChat = () => {
   // Message Notification
@@ -60,10 +61,12 @@ const BaseChat = () => {
   useEffect(() => {
     if (dialogs.length > 0) {
       // Подключение к сокету если есть диалоги
-      socket.connect();
+      socketChat.connect();
+      // Подключение к сокету уведомления
+      socketNotify.connect();
 
       // Обработчик события Ошибки (Вывод в всплывающем сообщении)
-      socket.on("connect_error", (err) => {
+      socketChat.on("connect_error", (err) => {
         if (err.message === "Invalid credentials") {
           showMessage('error', 'Ошибка', err.message, 4000);
         }
@@ -71,7 +74,10 @@ const BaseChat = () => {
     }
     return () => {
       // Удаление обработчика connect_error
-      socket.off("connect_error");
+      socketChat.off("connect_error");
+
+      // Отключение от сокета
+      socketChat.disconnect();
     }
   }, [dialogs.length])
   

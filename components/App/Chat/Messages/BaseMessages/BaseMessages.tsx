@@ -6,7 +6,7 @@ import ControlPanel from "./ControlPanel/ControlPanel";
 import { MessageReceive, MessageSend } from "./Message/Message";
 
 // Socket
-import socket from "@/components/App/Chat/socket/socket";
+import socketChat from '@/app/socket/chat/socket';
 
 // Redux
 import { useAppDispatch } from "@/app/redux/store";
@@ -45,14 +45,14 @@ const BaseMessages = ({
     if (!trimmed) return;
     const payload = { author: userId, text: text, dialog: currentDialogId };
     // Socket Отправка сообщения
-    socket.emit("message:post", payload);
+    socketChat.emit("message:post", payload);
     setText("");
   };
 
   useEffect(() => {
     // Получение Нового сообщения
 
-    socket.on("server:new_message", (message: GetMessageChat) => {
+    socketChat.on("server:new_message", (message: GetMessageChat) => {
       console.log('server:new_message - BaseMessages: ', message);
       // Добавление сообщения в Redux
       if (message.dialog.id === currentDialogId) {
@@ -69,7 +69,7 @@ const BaseMessages = ({
 
         // Обновление на прочитанные Всех сообщений в диалоге
         const payload = { dialog: message.dialog.id, user: userId };
-        socket.emit("messages:read", payload);
+        socketChat.emit("messages:read", payload);
       } else {
         // Проверяем есть ли мы в этом диалоге
         const authorId = message.dialog.author.id;
@@ -90,7 +90,7 @@ const BaseMessages = ({
       }
     });
 
-    socket.on("server:read_message", (message: ChangeReadMessageChat) => {
+    socketChat.on("server:read_message", (message: ChangeReadMessageChat) => {
       if (message.user === userId) {
         // Изменяем В Диалоге количество не прочитанных сообщений
         dispatch(
@@ -102,16 +102,16 @@ const BaseMessages = ({
     });
 
     // Обработка сообщения об ошибке
-    socket.on("message_error", (data: ErrorMessage) => {
+    socketChat.on("message_error", (data: ErrorMessage) => {
       if (data.userId === userId) {
         showMessage("error", "Ошибка", data.message, 4000);
       }
     });
 
     return () => {
-      socket.removeListener("server:new_message");
-      socket.removeListener("server:read_message");
-      socket.off("message_error");
+      socketChat.removeListener("server:new_message");
+      socketChat.removeListener("server:read_message");
+      socketChat.off("message_error");
     };
   }, []);
 
@@ -123,7 +123,7 @@ const BaseMessages = ({
       mainContentRef.current.scrollTo(0, 999999);
       // Обновление на прочитанные Все сообщения в диалоге
       const payload = { dialog: currentDialogId, user: userId };
-      socket.emit("messages:read", payload);
+      socketChat.emit("messages:read", payload);
       // Изменение значения количества непрочитанных сообщнений в активном диалоге на 0
       dispatch(
         setCountMessagesZero({

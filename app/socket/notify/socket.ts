@@ -3,7 +3,7 @@ import { io, Socket } from "socket.io-client";
 
 import { SERVER_WEBSOCKET } from "@/constants";
 
-let socket: Socket;
+let socketNotify: Socket;
 
 // Get Token JWT User
 let token;
@@ -12,8 +12,8 @@ if (typeof window !== "undefined") {
 }
 
 // Initialization Socket
-if (!socket) {
-  socket = io(`${SERVER_WEBSOCKET}chat`, {
+if (!socketNotify) {
+  socketNotify = io(`${SERVER_WEBSOCKET}notify`, {
     autoConnect: false,
     transportOptions: {
       polling: {
@@ -24,8 +24,8 @@ if (!socket) {
 }
 
 // Init Events DEBUG
-socket.onAny((event, ...args) => {
-  console.log("onAny: ", event, args);
+socketNotify.onAny((event, ...args) => {
+  console.log("onAny socketNotify: ", event, args);
 });
 
-export default socket;
+export default socketNotify;
